@@ -1,0 +1,249 @@
+<!DOCTYPE html><!doctype html>
+
+<html lang="en"><html lang="en">
+
+<head>  <head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Document</title>
+
+    <!-- SEO Meta Tags -->  </head>
+
+    <title>ProdTragedy - Premium Hip Hop, Trap & R&B Beats | Download Instrumentals</title>  <body>
+
+    <meta name="description" content="Download premium hip hop, trap, and R&B beats by ProdTragedy. High-quality instrumentals for artists, rappers, and singers. Instant download with commercial licenses."> 
+
+    <meta name="keywords" content="beats, instrumentals, hip hop beats, trap beats, R&B beats, ProdTragedy, music production, beat store, download beats, rap instrumentals">  </body>
+
+    <meta name="author" content="ProdTragedy"></html>
+
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://prodtragedy.com">
+    <meta property="og:title" content="ProdTragedy - Premium Beats & Instrumentals">
+    <meta property="og:description" content="Download exclusive hip hop, trap, and R&B beats by ProdTragedy. Professional production guaranteed.">
+    <meta property="og:image" content="https://prodtragedy.com/assets/og-image.jpg">
+    <meta property="og:site_name" content="ProdTragedy">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://prodtragedy.com">
+    <meta name="twitter:title" content="ProdTragedy - Premium Beats">
+    <meta name="twitter:description" content="Download exclusive beats by ProdTragedy">
+    <meta name="twitter:image" content="https://prodtragedy.com/assets/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://prodtragedy.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "ProdTragedy",
+      "description": "Music producer specializing in hip hop, trap, and R&B beats",
+      "url": "https://prodtragedy.com",
+      "genre": ["Hip Hop", "Trap", "R&B"],
+      "offers": {
+        "@type": "Offer",
+        "description": "Premium beat licenses",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "sameAs": [
+        "https://www.instagram.com/prodtragedy",
+        "https://twitter.com/prodtragedy",
+        "https://soundcloud.com/prodtragedy"
+      ]
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>ProdTragedy</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#beats">Beats</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Premium Beats & Instrumentals</h2>
+                <p class="hero-subtitle">Elevate your music with professional-grade beats crafted for artists who demand excellence</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="beat-count">0</span>
+                        <span class="stat-label">Premium Beats</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Original</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                </div>
+                <a href="#beats" class="cta-button">Explore Beats</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section" id="beats">
+        <div class="container">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    class="search-input" 
+                    placeholder="🔍 Search beats by title, genre, or BPM..." 
+                    id="search-input"
+                    autocomplete="off"
+                >
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="trap">Trap</button>
+                    <button class="filter-btn" data-filter="hip-hop">Hip Hop</button>
+                    <button class="filter-btn" data-filter="r&b">R&B</button>
+                    <button class="filter-btn" data-filter="drill">Drill</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beats Grid -->
+    <section class="beats-section">
+        <div class="container">
+            <div id="beats-container" class="beats-grid">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading premium beats...</p>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button id="load-more-btn" class="load-more-btn" style="display: none;">
+                    Load More Beats
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About ProdTragedy</h2>
+                <p>Crafting premium beats that define the sound of modern hip hop, trap, and R&B. Each track is meticulously produced to give artists the foundation they need to create their next hit.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Premium Quality</h3>
+                        <p>Professional mixing and mastering on every beat</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Download</h3>
+                        <p>Get your beats immediately after purchase</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📝</div>
+                        <h3>Commercial License</h3>
+                        <p>Full rights to use in your commercial projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Get In Touch</h2>
+                <p>Ready to take your music to the next level? Let's work together.</p>
+                <div class="contact-links">
+                    <a href="mailto:contact@prodtragedy.com" class="contact-link">
+                        <span class="contact-icon">📧</span>
+                        contact@prodtragedy.com
+                    </a>
+                    <a href="https://instagram.com/tragedymadeit" class="contact-link" target="_blank">
+                        <span class="contact-icon">📱</span>
+                        @tragedymadeit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content"
+                <div class="footer-section">
+                    <h3>ProdTragedy</h3>
+                    <p>Premium beats for the next generation of artists.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#beats">Beats</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/license">License Terms</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ProdTragedy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
